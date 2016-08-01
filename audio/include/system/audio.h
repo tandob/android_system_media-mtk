@@ -140,6 +140,15 @@ typedef enum {
                                           /* An example of remote presentation is Wifi Display */
                                           /*  where a dongle attached to a TV can be used to   */
                                           /*  play the mix captured by this audio source.      */
+#ifdef MTK_HARDWARE
+    AUDIO_SOURCE_VOICE_UNLOCK = 80,
+    AUDIO_SOURCE_CUSTOMIZATION1 = 81,
+    AUDIO_SOURCE_CUSTOMIZATION2 = 82,
+    AUDIO_SOURCE_CUSTOMIZATION3 = 83,
+    AUDIO_SOURCE_ANC = 97,
+    AUDIO_SOURCE_MATV = 98,
+    AUDIO_SOURCE_FM = 99,
+#endif
     AUDIO_SOURCE_CNT,
     AUDIO_SOURCE_MAX                 = AUDIO_SOURCE_CNT - 1,
     AUDIO_SOURCE_FM_TUNER            = 1998,
